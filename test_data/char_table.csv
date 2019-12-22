@@ -1,0 +1,13 @@
+primary_variable,size_variable,morph_variable
+eyes_above,head_width,sex
+eyes_below,head_width,sex
+scutellum_length,"scutellum_width,scutellum_length",sex
+scutellum_width,scutellum_length,sex
+scutellum_width,body_size,sex
+scutellum_length,body_size,sex
+rostrum_length,pronotum_length,sex
+rostrum_length,pronotum_length,
+rostrum_length,body_size,sex
+elytrum_width,elytra_length,sex
+body_size,,sex
+antennae_flagellum_2_length,body_size,,

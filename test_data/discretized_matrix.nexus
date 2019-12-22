@@ -1,0 +1,114 @@
+#NEXUS
+
+
+BEGIN TAXA;
+DIMENSIONS NTAX = 31 ;
+TAXLABELS
+'Anchylorhynchus_aegrotus'
+'Anchylorhynchus_albidus'
+'Anchylorhynchus_amazonicus'
+'Anchylorhynchus_bicarinatus'
+'Anchylorhynchus_bicolor'
+'Anchylorhynchus_bucki'
+'Anchylorhynchus_burmeisteri'
+'Anchylorhynchus_centrosquamatus[sp8]'
+'Anchylorhynchus_chrysomeloidea[sp4]'
+'Anchylorhynchus_goiano[sp6]'
+'Anchylorhynchus_imitator[sp5]'
+'Anchylorhynchus_latipes[sp3]'
+'Anchylorhynchus_luteobrunneus[sp9]'
+'Anchylorhynchus_minimus'
+'Anchylorhynchus_multisquamis[sp1]'
+'Anchylorhynchus_pinnocchio[sp7]'
+'Anchylorhynchus_rectus[sp2]'
+'Anchylorhynchus_silberbaueri'
+'Anchylorhynchus_trapezicollis'
+'Anchylorhynchus_tremolerasi'
+'Anchylorhynchus_tricarinatus'
+'Anchylorhynchus_vanini'
+'Anchylorhynchus_variabilis'
+'Anchylorhynchus_vittipennis'
+'Andranthobius_bondari'
+'Celetes_binotatus'
+'Celetes_langei'
+'Elaeidobius_kamerunicus'
+'Elaeidobius_subvittatus'
+'Anchylorhynchus_camposi'
+'Anchylorhynchus_parcus'
+;
+END;
+
+BEGIN CHARACTERS;
+DIMENSIONS NCHAR = 6 ;
+FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = " 0 1 2 ";
+CHARLABELS
+[1]'female, scutellum_width in relation to the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+[2]'male, scutellum_width in relation to the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+[3]'female, rostrum_length in relation to the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+[4]'male, rostrum_length in relation to the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+[5]'body_size'
+[6]'antennae_flagellum_2_length in relation to the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+;
+STATELABELS
+1
+'scutellum_width measurement is about 0.07772 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'scutellum_width measurement is about 0.1217 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width',
+2
+'scutellum_width measurement is about 0.07772 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'scutellum_width measurement is about 0.1217 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width',
+3
+'rostrum_length measurement is about 0.612 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'rostrum_length measurement is about 0.9199 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'rostrum_length measurement is about 1.494 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width',
+4
+'rostrum_length measurement is about 0.612 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'rostrum_length measurement is about 0.9199 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'rostrum_length measurement is about 1.494 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width',
+5
+'body_size measurement is about 0.1823'
+'body_size measurement is about 0.2551'
+'body_size measurement is about 0.325',
+6
+'antennae_flagellum_2_length measurement is about 0.1823 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'antennae_flagellum_2_length measurement is about 0.2551 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+'antennae_flagellum_2_length measurement is about 0.325 times the geometric mean of pronotum_length, pronotum_width, elytra_length, elytrum_width'
+;
+MATRIX
+'Anchylorhynchus_aegrotus'					000000
+'Anchylorhynchus_albidus'					111100
+'Anchylorhynchus_amazonicus'					1(0 1)1100
+'Anchylorhynchus_bicarinatus'					0011(0 1)0
+'Anchylorhynchus_bicolor'					1(0 1)1100
+'Anchylorhynchus_bucki'					000000
+'Anchylorhynchus_burmeisteri'					111120
+'Anchylorhynchus_centrosquamatus[sp8]'					111100
+'Anchylorhynchus_chrysomeloidea[sp4]'					111100
+'Anchylorhynchus_goiano[sp6]'					111100
+'Anchylorhynchus_imitator[sp5]'					1(0 1)1100
+'Anchylorhynchus_latipes[sp3]'					(0 1)111(0 2)0
+'Anchylorhynchus_luteobrunneus[sp9]'					111100
+'Anchylorhynchus_minimus'					1111(0 1)0
+'Anchylorhynchus_multisquamis[sp1]'					001100
+'Anchylorhynchus_pinnocchio[sp7]'					1(0 1)1200
+'Anchylorhynchus_rectus[sp2]'					1(0 1)1100
+'Anchylorhynchus_silberbaueri'					(0 1)(0 1)11(0 1)0
+'Anchylorhynchus_trapezicollis'					111100
+'Anchylorhynchus_tremolerasi'					1111(0 1 2)0
+'Anchylorhynchus_tricarinatus'					001100
+'Anchylorhynchus_vanini'					0000(0 2)0
+'Anchylorhynchus_variabilis'					1111(0 2)0
+'Anchylorhynchus_vittipennis'					111100
+'Andranthobius_bondari'					00(1 2)(1 2)(0 1)0
+'Celetes_binotatus'					00(1 2)100
+'Celetes_langei'					00(0 2)200
+'Elaeidobius_kamerunicus'					0(0 1)(1 2)(1 2)10
+'Elaeidobius_subvittatus'					001(1 2)10
+'Anchylorhynchus_camposi'					?0?10?
+'Anchylorhynchus_parcus'					?0?100
+;
+END;
+
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = ord: 1 - 6
+;
+END;
