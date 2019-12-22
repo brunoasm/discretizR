@@ -20,7 +20,10 @@ shinyUI(fluidPage(
       uiOutput('body_size_options'),
       uiOutput('select_variable'),
       uiOutput('output_for_mrbayes'),
-      uiOutput('output_for_tnt')
+      uiOutput('output_for_tnt'),
+      tags$div(class="header", checked=NA, tags$p(),
+               tags$p("Source code, citation and manual on github:", tags$a(href="https://github.com/brunoasm/discretizR", "brunoasm/discretizR", target="_blank")))
+      
     ),
 
     # Show a plot of the generated distribution

@@ -5,6 +5,20 @@ This program is an interactive tool to assist in discretizing measurements for p
 
 It helps in removing effects of size, separating dimorphic characters when the dimorphism is not constant betwen species, checking for character correlation and discretizing characters based on Gaussian mixtures.
 
+## Running
+
+To run the program locally, type in R:
+
+```{r}
+if (!require("shiny")) install.packages("shiny")
+library(shiny)
+runGitHub("brunoasm/discretizR")
+```
+You can also run it on shiny server by typing the following URL in a browser:
+
+```https://bmedeiros.shinyapps.io/discretizR/```
+
+
 ## Input
 
 To run the program, we need two kinds of input file (see the `test_data` folder on github for formatting):
@@ -83,3 +97,7 @@ Of course, this can only be accomplished if there are multiple individuals measu
 ### Can I upload the nexus file to MorphoBank?
 
 Yes, the output is fully compatible with MorphoBank!
+
+### Citation
+
+TBD, please cite the github repository for now.
